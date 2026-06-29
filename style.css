@@ -538,7 +538,7 @@
   .faq-item.open .faq-answer { max-height: 200px; }
 
   /* ─── CONTACT ─── */
-  .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; width: max-content; padding-inline: 4rem; align-items: start; }
   .contact-info { display: flex; flex-direction: column; gap: 24px; }
   .contact-item {
     display: flex; gap: 16px; align-items: flex-start;
