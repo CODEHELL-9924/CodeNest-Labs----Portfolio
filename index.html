@@ -11,7 +11,6 @@
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -358,7 +357,7 @@
     <div class="portfolio-grid" id="portfolioGrid">
       <div class="portfolio-card reveal" data-cat="mobile">
         <div class="portfolio-img">
-          <div class="portfolio-img-bg" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)">📱</div>
+          <div class="portfolio-img-bg"><img src="./images/coffee-shop-project.jpeg" alt="mobile-view" /></div>
           <div class="portfolio-overlay">
             <a href="#" class="overlay-btn primary">Live Preview</a>
             <a href="#" class="overlay-btn outline">Case Study</a>
@@ -366,8 +365,8 @@
         </div>
         <div class="portfolio-body">
           <div class="portfolio-cat">Mobile App</div>
-          <h3>SwiftPay — Mobile Banking App</h3>
-          <p>A fintech mobile application with real-time transactions, biometric auth, and spending analytics.</p>
+          <h3>CoffeeMate — Coffee Serving App</h3>
+          <p>A Breakfast serving store with time to time customer location serving ready made hot coffee</p>
           <div class="portfolio-techs">
             <span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Node.js</span>
           </div>
@@ -426,7 +425,7 @@
       </div>
       <div class="portfolio-card reveal reveal-delay-1" data-cat="software">
         <div class="portfolio-img">
-          <div class="portfolio-img-bg" style="background:linear-gradient(135deg,#1a2635,#06b6d4)">🎓</div>
+          <div class="portfolio-img-bg"><img src="./images/school-management-overview.png" alt="school-management-web" /></div>
           <div class="portfolio-overlay">
             <a href="#" class="overlay-btn primary">Live Preview</a>
             <a href="#" class="overlay-btn outline">Case Study</a>
@@ -434,7 +433,7 @@
         </div>
         <div class="portfolio-body">
           <div class="portfolio-cat">Custom Software</div>
-          <h3>EduCore — School Management System</h3>
+          <h3>SMS — School Management System</h3>
           <p>All-in-one platform for student management, grading, fee collection, and parent communication.</p>
           <div class="portfolio-techs">
             <span class="tag">Django</span><span class="tag">React</span><span class="tag">PostgreSQL</span>
@@ -485,6 +484,9 @@
 
 <!-- Process -->
 <section id="process">
+  <video id="process-video-bg" playsinline muted loop autoplay>
+    <source src="./videos/section_video.mp4" alt="mp4/video" />
+  </video>
   <div class="container">
     <div class="section-header centered reveal">
       <div class="section-label" style="background:rgba(6,182,212,0.15);border-color:rgba(6,182,212,0.3);color:var(--cyan)">How We Work</div>
