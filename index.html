@@ -9,8 +9,7 @@
 <meta property="og:title" content="CODENEST LABS — Building Digital Excellence Through Innovation">
 <meta property="og:description" content="We design, develop and scale modern websites, mobile apps, software systems and digital brands that drive real business growth.">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -148,7 +147,7 @@
   <div class="container">
     <div class="about-grid">
       <div class="reveal">
-        <div class="section-label">Who We Are</div>
+        <div class="section-label">More About Us</div>
         <h2 class="section-title">Building the Future of Digital Africa</h2>
         <p style="color:var(--gray-600);line-height:1.8;margin-bottom:16px;">CODENEST LABS is a technology company dedicated to creating innovative digital experiences through software engineering, product design and strategic digital solutions.</p>
         <p style="color:var(--gray-600);line-height:1.8;">We partner with businesses across Tanzania and beyond — from early-stage startups to established enterprises — to deliver software that works, scales, and stands out.</p>
@@ -828,29 +827,40 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Legal</h5>
-        <ul class="footer-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Cookie Policy</a></li>
-          <li><a href="#">Refund Policy</a></li>
-        </ul>
+        <div class="footer-section">
+    <h5>Legal</h5>
+    <ul class="footer-links">
+        <li><a href="#" onclick="showLegal('Privacy Policy')">Privacy Policy</a></li>
+        <li><a href="#" onclick="showLegal('Terms of Service')">Terms of Service</a></li>
+        <li><a href="#" onclick="showLegal('Cookie Policy')">Cookie Policy</a></li>
+        <li><a href="#" onclick="showLegal('Refund Policy')">Refund Policy</a></li>
+    </ul>
+</div>
+
+<!-- Modal -->
+<div id="legalModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="legalTitle"></h2>
+        <div id="legalContent"></div>
+    </div>
+</div>
         <h5 style="margin-top:24px">Location</h5>
         <ul class="footer-links">
           <li><a href="#">Dar es Salaam, TZ</a></li>
-          <li><a href="#">East Africa Region</a></li>
+          <li><a href="#">Mbeya, TZ</a><li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 CODENEST LABS. All Rights Reserved. Built with ❤️ in Tanzania.</p>
-      <p>Transforming Africa through Technology</p>
+      <p>© 2026 CodeNest Labs. All Rights Reserved.</p>
+      <p>Crafting Innovative Software • Web Solutions • Digital Marketing</p>
     </div>
   </div>
 </footer>
 
 <!-- Floating Buttons -->
-<a href="https://wa.me/255617516916" class="wa-float" target="_blank" title="Chat on WhatsApp">💬</a>
+<a href="https://wa.me/255617516916" class="wa-float" target="_blank" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
 
 <script src="script.js">

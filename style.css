@@ -655,3 +655,42 @@
     .process-timeline { grid-template-columns: 1fr 1fr; }
     #cursor, #cursor-ring { display: none; }
   }
+
+  /* service */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#ddd;
+}
+
+.footer-links a:hover{
+    color:#00bcd4;
+}
