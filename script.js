@@ -109,4 +109,44 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
+// legals
+const legalPages = {
+    "Privacy Policy": `
+        <p><strong>Privacy Policy</strong></p>
+        <p>We respect your privacy. Any information submitted through our website is kept confidential and is never shared with third parties without your consent.</p>
+    `,
+
+    "Terms of Service": `
+        <p><strong>Terms of Service</strong></p>
+        <p>By using this website, you agree to our terms and conditions. Services are provided according to the agreed project scope and timelines.</p>
+    `,
+
+    "Cookie Policy": `
+        <p><strong>Cookie Policy</strong></p>
+        <p>This website uses cookies to improve user experience, analyze traffic, and enhance website performance.</p>
+    `,
+
+    "Refund Policy": `
+        <p><strong>Refund Policy</strong></p>
+        <p>Refunds are evaluated on a case-by-case basis. Completed digital services and delivered projects are generally non-refundable.</p>
+    `
+};
+
+function showLegal(page){
+    document.getElementById("legalTitle").innerText = page;
+    document.getElementById("legalContent").innerHTML = legalPages[page];
+    document.getElementById("legalModal").style.display = "block";
+}
+
+function closeModal(){
+    document.getElementById("legalModal").style.display = "none";
+}
+
+window.onclick = function(event){
+    const modal = document.getElementById("legalModal");
+    if(event.target === modal){
+        modal.style.display = "none";
+    }
+}
+
 
