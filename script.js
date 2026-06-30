@@ -89,15 +89,46 @@ document.querySelectorAll('.faq-question').forEach(q => {
 });
 
 // Form submit
+const fullName = document.getElementById("fullName");
+const emailAddress = document.getElementById("emailAddress");
+const phoneNumber = document.getElementById("phoneNumber");
+const serviceNeeded = document.getElementById("serviceNeeded");
+const projectBudget = document.getElementById("projectBudget");
+const projectDes = document.getElementById("project-des")
+
 function handleSubmit(btn) {
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  btn.style.opacity = '0.7';
-  setTimeout(() => {
-    btn.textContent = '✓ Message Sent! We\'ll be in touch soon.';
-    btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
-    btn.style.opacity = '1';
-  }, 1800);
+  if(fullName.value.trim() === "" ||
+      emailAddress.value === "" ||
+      phoneNumber.value === "" ||
+      serviceNeeded.value === "" ||
+      projectBudget.value === "" ||
+      projectDes.value === "") {
+        document.querySelector(".error-filling-form").textContent = '* Fill all the details';
+        setTimeout(() => {
+          document.querySelector(".error-filling-form").textContent = "";
+        },1500)
+      }
+    else {
+          btn.textContent = 'Sending...';
+          btn.disabled = true;
+          btn.style.opacity = '0.7';
+          setTimeout(() => {
+            btn.textContent = '✓ Message Sent! We\'ll be in touch soon.';
+            btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+            btn.style.opacity = '1';
+          }, 1800);
+
+          const text = `FullName: ${fullName.Value}
+                        Email: ${emailAddress.value}
+                        Phone: ${phoneNumber.value}
+                        Service Request: ${serviceNeeded.value}
+                        Budget: ${projectBudget.value}
+                        Project Description: ${projectDes.value}`;
+                    
+          const encodedText = encodeURIComponent(text);
+          const url = `https://wa.me/255617516916?text=${encodedText}`
+          window.open(url, '_blank')
+}
 }
 
 // Smooth scroll for nav links
