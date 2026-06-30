@@ -89,15 +89,46 @@ document.querySelectorAll('.faq-question').forEach(q => {
 });
 
 // Form submit
+const fullName = document.getElementById("fullName");
+const emailAddress = document.getElementById("emailAddress");
+const phoneNumber = document.getElementById("phoneNumber");
+const serviceNeeded = document.getElementById("serviceNeeded");
+const projectBudget = document.getElementById("projectBudget");
+const projectDes = document.getElementById("project-des")
+
 function handleSubmit(btn) {
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  btn.style.opacity = '0.7';
-  setTimeout(() => {
-    btn.textContent = '✓ Message Sent! We\'ll be in touch soon.';
-    btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
-    btn.style.opacity = '1';
-  }, 1800);
+  if(fullName.value.trim() === "" ||
+      emailAddress.value === "" ||
+      phoneNumber.value === "" ||
+      serviceNeeded.value === "" ||
+      projectBudget.value === "" ||
+      projectDes.value === "") {
+        document.querySelector(".error-filling-form").textContent = '* Fill all the details';
+        setTimeout(() => {
+          document.querySelector(".error-filling-form").textContent = "";
+        },1500)
+      }
+    else {
+          btn.textContent = 'Sending...';
+          btn.disabled = true;
+          btn.style.opacity = '0.7';
+          setTimeout(() => {
+            btn.textContent = '✓ Message Sent! We\'ll be in touch soon.';
+            btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+            btn.style.opacity = '1';
+          }, 1800);
+
+          const text = `FullName: ${fullName.Value}
+                        Email: ${emailAddress.value}
+                        Phone: ${phoneNumber.value}
+                        Service Request: ${serviceNeeded.value}
+                        Budget: ${projectBudget.value}
+                        Project Description: ${projectDes.value}`;
+                    
+          const encodedText = encodeURIComponent(text);
+          const url = `https://wa.me/255617516916?text=${encodedText}`
+          window.open(url, '_blank')
+}
 }
 
 // Smooth scroll for nav links
@@ -110,6 +141,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 
 // legals
+<<<<<<< HEAD
 const legalPages = {
     "Privacy Policy": `
         <p><strong>Privacy Policy</strong></p>
@@ -149,4 +181,43 @@ window.onclick = function(event){
     }
 }
 
+=======
+// const legalPages = {
+//     "Privacy Policy": `
+//         <p><strong>Privacy Policy</strong></p>
+//         <p>We respect your privacy. Any information submitted through our website is kept confidential and is never shared with third parties without your consent.</p>
+//     `,
+>>>>>>> 122f2af43143b0c8c173ee8dbe9ce56ab61497b5
 
+//     "Terms of Service": `
+//         <p><strong>Terms of Service</strong></p>
+//         <p>By using this website, you agree to our terms and conditions. Services are provided according to the agreed project scope and timelines.</p>
+//     `,
+
+//     "Cookie Policy": `
+//         <p><strong>Cookie Policy</strong></p>
+//         <p>This website uses cookies to improve user experience, analyze traffic, and enhance website performance.</p>
+//     `,
+
+//     "Refund Policy": `
+//         <p><strong>Refund Policy</strong></p>
+//         <p>Refunds are evaluated on a case-by-case basis. Completed digital services and delivered projects are generally non-refundable.</p>
+//     `
+// };
+
+// function showLegal(page){
+//     document.getElementById("legalTitle").innerText = page;
+//     document.getElementById("legalContent").innerHTML = legalPages[page];
+//     document.getElementById("legalModal").style.display = "block";
+// }
+
+// function closeModal(){
+//     document.getElementById("legalModal").style.display = "none";
+// }
+
+// window.onclick = function(event){
+//     const modal = document.getElementById("legalModal");
+//     if(event.target === modal){
+//         modal.style.display = "none";
+//     }
+// }
