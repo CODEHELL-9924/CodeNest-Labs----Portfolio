@@ -29,7 +29,7 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <div class="nav-logo-icon"><img src="./images/OUR LOGO.jpeg" style="width: 60px; height: 60px; outline: 1px solid var(--blue); outline-offset: 3px; border-radius: 50%;"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="nav-logo-icon"><img src="./images/OUR LOGO.jpeg" style="width: 60px; height: 60px; outline: 1px dashed var(--cyan); outline-offset: 3px; border-radius: 50%;"></div>&nbsp;&nbsp;&nbsp;&nbsp;
       <span id="code--">CODE<span>NEST</span></span><span id="code--">Labs</span>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -759,14 +759,14 @@
             <label>Service Needed *</label>
             <select id="serviceNeeded">
               <option value="">Select a service</option>
-              <option>Mobile App Development</option>
-              <option>Web Development</option>
-              <option>Custom Software</option>
-              <option>UI/UX Design</option>
-              <option>Social Media Management</option>
-              <option>Brand Identity</option>
-              <option>Digital Transformation</option>
-              <option>Other</option>
+              <option value="Mobile App Development">Mobile App Development</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Custom Software">Custom Software</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Social Media Management">Social Media Management</option>
+              <option value="Brand Identity">Brand Identity</option>
+              <option value="Digital Transformation">Digital Transformation</option>
+              <option value="Other">Other</option>
             </select>
           </div>
         </div>
@@ -774,20 +774,20 @@
           <label>Project Budget</label>
           <select id="projectBudget">
             <option value="">Select budget range</option>
-            <option>Under TZS 250,000</option>
-            <option>TZS 251,000– TZS 350,000</option>
-            <option>TZS 351,000 – TZS 650,000</option>
-            <option>TZS 700,000 – TZS 950,000</option>
-            <option>1M+</option>
+            <option value="Under TZS 250,000">Under TZS 250,000</option>
+            <option value="TZS 251,000– TZS 350,000">TZS 251,000– TZS 350,000</option>
+            <option value="TZS 351,000 – TZS 650,000">TZS 351,000 – TZS 650,000</option>
+            <option value="TZS 700,000 – TZS 950,000">TZS 700,000 – TZS 950,000</option>
+            <option value="1M+">1M+</option>
           </select>
         </div>
         <div class="form-group">
           <label>Project Description *</label>
-          <textarea placeholder="Tell us about your project — what you're building, your goals, timeline, and any specific requirements..."></textarea>
+          <textarea id="project-des" placeholder="Tell us about your project — what you're building, your goals, timeline, and any specific requirements..."></textarea>
         </div>
         <div class="error-filling-form"></div>
         <button class="btn-submit" onclick="handleSubmit(this)">
-          <a href="https://wa.me/255617516916" style="color:white;text-decoration:none">Send Message →</a>
+          Send Message →
         </button>
       </div>
     </div>

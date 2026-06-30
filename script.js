@@ -97,7 +97,7 @@ const projectBudget = document.getElementById("projectBudget");
 const projectDes = document.getElementById("project-des")
 
 function handleSubmit(btn) {
-  if(fullName.value.trim() === "" ||
+  if(fullName.value === "" ||
       emailAddress.value === "" ||
       phoneNumber.value === "" ||
       serviceNeeded.value === "" ||
@@ -118,12 +118,12 @@ function handleSubmit(btn) {
             btn.style.opacity = '1';
           }, 1800);
 
-          const text = `FullName: ${fullName.Value}
-                        Email: ${emailAddress.value}
-                        Phone: ${phoneNumber.value}
-                        Service Request: ${serviceNeeded.value}
-                        Budget: ${projectBudget.value}
-                        Project Description: ${projectDes.value}`;
+          const text = `FullName: ${fullName.value}
+          Email: ${emailAddress.value}
+          Phone: ${phoneNumber.value}
+          Service Request: ${serviceNeeded.value}
+          Budget: ${projectBudget.value}
+          Project Description: ${projectDes.value}`;
                     
           const encodedText = encodeURIComponent(text);
           const url = `https://wa.me/255617516916?text=${encodedText}`
