@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    .hero{
+        min-height: 50vh; background: white;
+        margin-top: -75px;
+        display: flex; align-items: center; justify-content: center;
+        position: relative; overflow: hidden; padding: 120px 24px 80px;
+        overflow: hidden;
+        & * {
+            z-index: 3;
+        }
+
+    }
+    .hero::after {
+        content: "";
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: var(--navy);
+        border-radius: 0 0 50% 50%;
+        z-index: 2;
+    }
+    .privacy-header{
+        text-align: center;
+    }
+    .privacy-overview, .privacy-info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .ovw{
+        max-width: 70ch;
+    }
+    .listed-info{
+        text-align: start;
+    }
+    .main-sect{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        @media (max-width: 918px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+    .navbar {
+        position: relative;
+    }
+</style>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon"><img src="./images/OUR LOGO.jpeg" style="width: 60px; height: 60px; outline: 1px solid var(--blue); outline-offset: 3px; border-radius: 50%;"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+          <span id="code--">CODE<span>NEST</span></span><span id="code--">LABS</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html #services">Services</a></li>
+          <li><a href="index.html #portfolio">Portfolio</a></li>
+          <li><a href="index.html #tech">Tech</a></li>
+          <li><a href="index.html #contact" class="nav-cta">Get Started</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+    <div class="privacy-header">
+        <h1>Cookies Policy</h1>
+        <p>Effective April 28, 2023</p> 
+    </div>
+</section>
+    <br><br><br><br>
+    <div class="privacy-overview">
+        <h1>Overview</h1>
+    <p class="ovw">This policy applies to all services provided by CodeNest Labs including software development, mobile applications, website development, UI/UX design and social media management.</p>
+    </div><br>
+    <section class="main-sect">
+    <div class="privacy-info">
+        <h1>1. Policy Details</h1>
+        <p>We may collect the following categories of information:</p>
+           <div class="listed-info">
+            <ul>
+                <li>Company: Code Nest Labs</li>
+                <li>Location: Mbeya, Tanzania</li>
+                <li>Email: codenest284@gmail.com</li>
+                <li>Website: https://codenestlabs.page.gd</li>
+           </ul>
+           </div>
+    </div>
+        <br><br><br>
+    <div class="privacy-info">
+        <h1>2. Acceptance of Terms</h1>
+        <p>The information we collect can be used for the following:By accessing this website, you confirm that you are at least 18 years old
+        or have permission from a legal guardian to use our services.</p>
+    </div>
+        <br><br><br>
+    <div class="privacy-info">
+        <h1>3. Services</h1>
+        <p>CODENEST LABS Technologies provides software development, web development,
+        mobile application development, UI/UX design, branding, social media
+        management, consulting, and related digital services</p>
+    </div>
+    <div class="privacy-info">
+        <h1>4. Intellectual Property</h1>
+        <div class="listed-info">
+            <ul>
+                 <li>Provide accurate project requirements.</li>
+                <li>Respond to project communications promptly.</li>
+                <li>Ensure submitted content does not violate any laws or copyrights.</li>
+           </ul>
+    </div>
+    <br><br><br>
+    <div class="privacy-info">
+        <h1>5. Client Responsibilities</h1>
+        <p>CODENEST LABS Technologies provides software development, web development,
+        mobile application development, UI/UX design, branding, social mediagit pull
+        management, consulting, and related digital services</p>
+    </div>
+   <br><br><br> 
+    <div class="privacy-info">
+        <h1>6. Payments</h1>
+        <p> Project fees, payment schedules, and invoices are agreed upon before work
+        begins. Late payments may result in suspension of services until payment is
+        received.<p>
+    </div>
+    <br><br><br>
+    <div class="privacy-info">
+        <h1>7. Limitation of Liability</h1>
+        <p>We strive to deliver reliable services but cannot guarantee uninterrupted
+        availability. CODENEST LABS Technologies shall not be liable for indirect,
+        incidental, or consequential damages resulting from the use of our services.<p>
+    </div>
+    <br><br><br>
+    <div class="privacy-info">
+        <h1>8. Termination</h1>
+        <p> We reserve the right to suspend or terminate services if these Terms are
+        violated or if illegal activities are detected.<p>
+    </div>
+    <br><br><br>
+</section>
+   <div class="privacy-overview">
+        <h1>Changes to This Privacy Policy</h1>
+    <p class="ovw"> We may update these Terms of Use at any time. Continued use of our website
+        after updates constitutes acceptance of the revised Terms.</p>
+    </div><br>
+<!-- footer -->
+ <footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="color:white;text-decoration:none">
+          <div class="nav-logo-icon"><img src="./images/OUR LOGO.jpeg" style="width: 38px; height: 38px; border-radius: 50%;"></div>&nbsp;&nbsp;&nbsp;
+          <span style="color: white;">CODE<span style="color:var(--cyan)">NEST</span></span> LABS
+        </a>
+        <p>Building digital excellence through innovation. We partner with ambitious businesses across Africa and the world to create technology that matters.</p>
+        <div class="social-links">
+          <a href="https://www.linkedIn.com/Kadeer Moh/" class="social-link" title="LinkedIn"><img src="./images/icons8-linkedin-circled.gif" style=" width: 37px; height: 37px; border-radius: 6px;"></a>
+          <a href="https://wa.me/255617516916" class="social-link" title="WhatsApp"><img src="./images/icons8-whatsapp-logo.gif"  style=" width: 37px; height: 37px; border-radius: 6px;"></a>
+          <a href="https://www.instagram.com/codenest_labs_tech/" class="social-link" title="Instagram"><img src="./images/icons8-instagram.gif" style=" width: 37px; height: 37px; border-radius: 6px;"></a>
+          <a href="https://www.gitHub.com/Justin24er" class="social-link" title="GitHub"><img src="./images/icons8-github-logo.gif" style=" width: 37px; height: 37px; border-radius: 6px;"></a>
+          <!-- <a href="https://www.facebook.com/codemark Technologi" class="social-link" title="Facebook"><img src="./images/icons8-facebook-circled.gif" style=" width: 37px; height: 37px; border-radius: 6px;"></a> -->
+          <a href="https://www.tiktok.com/" class="social-link" title="Tiktok"><img src="./images/icons8-tiktok.gif" style=" width: 37px; height: 37px; border-radius: 6px;"></a>
+        </div>
+        <div style="margin-top:24px">
+          <p style="font-size:0.78rem;color:rgba(255,255,255,0.4);margin-bottom:10px;">Subscribe to our social media</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul class="footer-links">
+          <li><a href="#services">Mobile App Dev</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Custom Software</a></li>
+          <li><a href="#services">UI/UX Design</a></li>
+          <li><a href="#services">Social Media</a></li>
+          <li><a href="#services">Brand Identity</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-section">
+    <h5>Legal</h5>
+    <ul class="footer-links">
+        <li><a href="Privacy-policy.html" onclick="showLegal('Privacy Policy')">Privacy Policy</a></li>
+        <li><a href="Term-of-Service.html" onclick="showLegal('Terms of Service')">Terms of Service</a></li>
+        <li><a href="cookies.html" onclick="showLegal('Cookie Policy')">Cookie Policy</a></li>
+        <li><a href="refund.html" onclick="showLegal('Refund Policy')">Refund Policy</a></li>
+    </ul>
+</div>
+
+<!-- Modal -->
+<div id="legalModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="legalTitle"></h2>
+        <div id="legalContent"></div>
+    </div>
+</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CodeNest Labs. All Rights Reserved.</p>
+      <p>Crafting Innovative Software • Web Solutions • Digital Marketing</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Cookie Policy - Code Nest Labs</title>
+<style>
+:root{--p:#4da3ff;--bg:#f5fbff;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#eef8ff,#fff);color:#233}
+header{background:linear-gradient(135deg,var(--p),#8fd0ff);color:#fff;padding:48px 24px;text-align:center}
+main{max-width:900px;margin:-30px auto 40px;background:var(--card);padding:32px;border-radius:18px;box-shadow:0 10px 30px rgba(77,163,255,.18)}
+h1,h2{color:#2789eb}section{margin:24px 0}ul{padding-left:22px}
+footer{margin-top:32px;padding-top:18px;border-top:1px solid #d9ecff;color:#666}
+.badge{display:inline-block;background:#e7f4ff;color:#2789eb;padding:6px 12px;border-radius:999px;font-size:.9rem}
+</style>
+</head>
+<body><header><span class='badge'>Code Nest Labs</span><h1>Cookie Policy</h1><p>Effective Date: June 29, 2026</p></header>
+<main>
+<section><h2>Overview</h2><p>This policy applies to all services provided by Code Nest Labs including software development, mobile applications, website development, UI/UX design and social media management.</p></section>
+<section><h2>Key Information</h2><ul><li>Company: Code Nest Labs</li><li>Location: Mbeya, Tanzania</li><li>Email: codenest284@gmail.com</li><li>Website: https://codenest.page.gd</li></ul></section>
+<section><h2>Policy Details</h2><p>Please replace this section with the full legal wording from your master policy if desired. This modern template is ready to integrate into your portfolio website.</p></section>
+<footer>© 2026 Code Nest Labs. All rights reserved.</footer>
+</main></body></html> -->
